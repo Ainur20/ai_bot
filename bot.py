@@ -72,7 +72,7 @@ def show_profile(message):
     # Безопасный доступ к данным - показываем ВСЕ поля
     profile_text = f"""
     👤<b>Твой профиль:</b>
-    ID: `{user_data.get('user_id', 'N/A')}`
+    ID: {user_data.get('user_id', 'N/A')}
     Username: @{user_data.get('username', 'отсутствует')}
     Имя: {user_data.get('first_name') or 'Не указано'}
     Фамилия: {user_data.get('last_name') or 'Не указано'}
